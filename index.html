@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LALUS Lavandería Express Laundry | Surquillo · Miraflores</title>
+<meta name="description" content="Lavandería express en Surquillo, límite con Miraflores. Lavado por carga separada, lavado al seco, ropa de cama, vestidos de fiesta y servicio para empresas. Recojo y entrega a domicilio.">
+<meta property="og:title" content="LALUS Lavandería Express Laundry">
+<meta property="og:description" content="Vive más, lava menos. Recojo y entrega en Miraflores, San Isidro, Surquillo, San Borja y Barranco.">
+<meta property="og:image" content="https://laluslavanderia.com/img/canasta.webp">
+<meta property="og:url" content="https://laluslavanderia.com/">
+<link rel="canonical" href="https://laluslavanderia.com/">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --indigo:#044b81; --navy:#0b2a4a; --aqua:#93e1e3; --sand:#e2d8d7;
+  --mist:#f4fdfc; --ink:#2d2d2d; --muted:#5d6b78; --line:#e6ecf1;
+  --wa:#25d366; --radius:18px; --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:"Poppins",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+section{padding:110px 0}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--indigo);font-weight:600;margin-bottom:14px;display:block}
+h1,h2,h3{line-height:1.15;font-weight:600;color:var(--navy)}
+h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:18px;letter-spacing:-.01em}
+h3{font-size:1.2rem;margin-bottom:8px}
+p{color:var(--muted)}
+.lead{font-size:1.08rem;max-width:620px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:500;font-size:.95rem;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 10px 24px -10px rgba(37,211,102,.7)}
+.btn-dark{background:var(--indigo);color:#fff}
+.btn-ghost{background:rgba(255,255,255,.7);color:var(--navy);backdrop-filter:blur(6px)}
+.btn-line{border:1.5px solid var(--indigo);color:var(--indigo);background:transparent}
+
+/* ===== Header ===== */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;transition:height .3s}
+.logo{position:relative;width:132px;height:76px}
+.logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:left center;transition:opacity .3s}
+.logo .l-azul{opacity:0}
+nav ul{display:flex;gap:34px;list-style:none;align-items:center}
+nav a{color:#fff;font-size:.95rem;font-weight:400;position:relative;padding:4px 0;text-shadow:0 1px 8px rgba(11,42,74,.25)}
+nav a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:currentColor;transition:width .25s}
+nav a:hover::after,nav a.active::after{width:100%}
+nav .nav-cta{background:#fff;color:var(--indigo);padding:9px 20px;border-radius:999px;font-weight:500;text-shadow:none}
+nav .nav-cta::after{display:none}
+header.scrolled{background:rgba(255,255,255,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+header.scrolled .wrap{height:70px}
+header.scrolled .logo{height:62px}
+header.scrolled .l-blanco{opacity:0}
+header.scrolled .l-azul{opacity:1}
+header.scrolled nav a{color:var(--navy);text-shadow:none}
+header.scrolled nav .nav-cta{background:var(--indigo);color:#fff}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:#fff}
+header.scrolled .burger{color:var(--navy)}
+.burger svg{width:28px;height:28px}
+
+/* ===== Hero ===== */
+.hero{min-height:100vh;min-height:100svh;background:url(img/fondo-1.webp) center/cover no-repeat,#b9cadb;position:relative;display:flex;align-items:center;padding:120px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:20px;width:100%}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);color:#fff;font-weight:600;letter-spacing:-.02em;text-shadow:0 2px 30px rgba(11,42,74,.25)}
+.hero h1 em{font-style:normal;color:var(--navy)}
+.hero p{color:#fff;font-size:1.1rem;margin:22px 0 34px;max-width:470px;text-shadow:0 1px 14px rgba(11,42,74,.3)}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-img{position:relative;justify-self:center;width:min(560px,100%);aspect-ratio:1/1}
+.slide{position:absolute;inset:0;opacity:0;transform:scale(.94);transition:opacity .6s ease,transform .6s ease}
+.slide.on{opacity:1;transform:none;transition:opacity 1s ease .55s,transform 1s ease .55s}
+.slide img{position:absolute;filter:drop-shadow(0 40px 40px rgba(11,42,74,.25))}
+.slide .fl{inset:0;width:100%;height:100%;object-fit:contain;animation:float 7s ease-in-out infinite}
+.slide.combo .fl{inset:auto;left:6%;top:12%;width:88%;height:auto;animation-duration:6s}
+.slide.combo .base{left:0;bottom:4%;width:100%;filter:drop-shadow(0 30px 25px rgba(11,42,74,.22))}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-22px) rotate(2deg)}}
+.stats{position:absolute;left:0;right:0;bottom:0;background:rgba(255,255,255,.82);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.6)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-top:26px;padding-bottom:26px}
+.stat{text-align:center;padding:0 10px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;color:var(--indigo);line-height:1.1}
+.stat span{font-size:.85rem;color:var(--muted)}
+
+/* ===== Intro ===== */
+.intro .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.intro-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:var(--mist)}
+.intro-img img{width:100%;height:100%;object-fit:cover}
+.checks{list-style:none;margin:28px 0 30px;display:grid;gap:14px}
+.checks li{display:flex;gap:14px;align-items:flex-start;color:var(--ink)}
+.checks li::before{content:"";flex:none;width:24px;height:24px;border-radius:50%;background:var(--aqua) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23044b81' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12l4 4 8-8'/%3E%3C/svg%3E") center/14px no-repeat;margin-top:1px}
+.note{border-left:3px solid var(--aqua);padding:4px 0 4px 18px;font-size:.95rem}
+.note b{color:var(--navy);font-weight:600}
+.eco{display:flex;gap:18px;align-items:center;margin-top:26px;padding:18px 22px;border-radius:var(--radius);background:linear-gradient(120deg,#eaf8f3,var(--mist));border:1px solid #d4efe6}
+.eco img{width:56px;height:auto;flex:none}
+.eco b{display:block;color:var(--navy);font-weight:600}
+.eco span{font-size:.9rem;color:var(--muted)}
+.tag{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:.75rem;font-weight:500;color:#1d6b4f;background:#e6f6ef;padding:5px 10px;border-radius:999px}
+.tag img{width:14px}
+
+/* ===== Servicios ===== */
+.servicios{background:var(--mist)}
+.head{max-width:640px;margin-bottom:56px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(11,42,74,.35)}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--sand)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.05)}
+.card .ph.novia{background:linear-gradient(150deg,#fff 0%,var(--sand) 60%,#cdbfbd 100%);display:grid;place-items:center}
+.card .ph.novia svg{width:44%;height:auto;color:#fff;filter:drop-shadow(0 8px 14px rgba(0,0,0,.12))}
+.card .tx{padding:22px 22px 26px}
+.card p{font-size:.92rem}
+
+/* ===== Empresas ===== */
+.empresas{background:url(img/fondo-2.webp) center/cover no-repeat,#c3d2e0;position:relative;overflow:hidden}
+.empresas .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:50px;align-items:center}
+.empresas .fig{display:flex;justify-content:center}
+.empresas .fig img{max-height:560px;width:auto;filter:drop-shadow(0 30px 30px rgba(11,42,74,.25));animation:float 8s ease-in-out infinite}
+.empresas h2{color:var(--navy)}
+.empresas .lead{color:#33475b}
+.sectores{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:32px 0}
+.sector{background:rgba(255,255,255,.8);backdrop-filter:blur(6px);border-radius:14px;padding:18px 20px}
+.sector h3{font-size:1rem;margin-bottom:4px}
+.sector p{font-size:.86rem;color:#4b5d6e}
+.perks{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.perks span{background:var(--navy);color:#fff;font-size:.82rem;padding:7px 14px;border-radius:999px}
+
+/* ===== Nosotros ===== */
+.nos-top{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;margin-bottom:80px}
+.nos-top .img{border-radius:var(--radius);overflow:hidden;background:url(img/fondo-1.webp) center/cover}
+.nos-top .img img{width:100%}
+.nos-top p+p{margin-top:16px}
+.quote{margin-top:26px;font-size:1.35rem;color:var(--indigo);font-weight:500;line-height:1.4}
+.valores{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.valor{padding:32px 28px;border-radius:var(--radius);background:var(--mist);border:1px solid var(--line)}
+.valor .ic{width:52px;height:52px;border-radius:14px;background:#fff;display:grid;place-items:center;margin-bottom:18px;color:var(--indigo);box-shadow:0 6px 16px -10px rgba(4,75,129,.5)}
+.valor .ic svg{width:26px;height:26px}
+.valor p{font-size:.93rem}
+
+/* ===== Reseñas ===== */
+.resenas{background:var(--navy);color:#fff;padding:64px 0;text-align:center}
+.resenas h2{color:#fff;margin-bottom:8px}
+.resenas p{color:#c7d6e4;margin:0 auto 26px;max-width:560px}
+.gscore{display:inline-flex;align-items:center;gap:14px;margin:4px auto 28px;padding:10px 22px 10px 18px;border-radius:999px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);text-align:left;transition:background .2s}
+.gscore:hover{background:rgba(255,255,255,.12)}
+.gnum{font-size:2.1rem;font-weight:600;line-height:1}
+.gstars{position:relative;display:inline-block;font-size:1.2rem;letter-spacing:0;color:rgba(255,255,255,.25);line-height:1.2}
+.gstars .fill{position:absolute;left:0;top:0;overflow:hidden;white-space:nowrap;color:#ffc94d}
+.gscore small{display:block;color:#c7d6e4;font-size:.8rem}
+.gscore small b{color:#fff;font-weight:600}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left;transition:opacity .5s ease,transform .5s ease}
+.rev-grid.fade{opacity:0;transform:translateY(8px)}
+.rev{margin:0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:20px 22px;display:flex;flex-direction:column}
+.rev[hidden]{display:none}
+.rev .st{color:#ffc94d;font-size:.85rem;letter-spacing:2px}
+.rev blockquote{color:#e6eef6;font-size:.9rem;line-height:1.55;margin:8px 0 12px;flex:1;min-height:6.2em;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.rev b{display:block;font-weight:500;font-size:.88rem}
+.rev small{color:#8fa6bb;font-size:.72rem}
+.dots{display:flex;justify-content:center;gap:8px;margin:20px 0 26px}
+.dots button{width:8px;height:8px;border-radius:99px;border:0;background:rgba(255,255,255,.3);cursor:pointer;padding:0;transition:width .3s,background .3s}
+.dots button.on{width:22px;background:#fff}
+@media (max-width:860px){.rev-grid{grid-template-columns:1fr}}
+
+/* ===== Contacto ===== */
+.contacto .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.info{display:grid;gap:22px;margin:30px 0}
+.info div{display:flex;gap:16px}
+.info .ic{flex:none;width:44px;height:44px;border-radius:12px;background:var(--mist);color:var(--indigo);display:grid;place-items:center}
+.info .ic svg{width:22px;height:22px}
+.info b{display:block;color:var(--navy);font-weight:600;font-size:.95rem}
+.info span,.info a{color:var(--muted);font-size:.93rem}
+.info a:hover{color:var(--indigo)}
+.horario{display:flex;align-items:center;gap:22px;margin-bottom:22px;padding:18px 22px;border-radius:var(--radius);background:var(--mist);border:1px solid var(--line)}
+.horario img{width:96px;height:96px;flex:none;filter:drop-shadow(0 8px 14px rgba(0,0,0,.18))}
+.horario b{display:block;color:var(--navy);font-size:1.15rem;font-weight:600}
+.horario span{color:var(--muted)}
+.estado{display:inline-block;font-size:.75rem!important;font-weight:600;padding:3px 10px;border-radius:999px;background:#e6ecf1;margin-bottom:6px}
+.estado.abierto{background:#e1f7e9;color:#14853f!important}
+.estado.cerrado{background:#fde8e8;color:#b42318!important}
+.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:260px}
+.map iframe{width:100%;height:100%;border:0}
+form{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:36px;display:grid;gap:16px;align-self:start}
+form h3{font-size:1.4rem}
+form p{font-size:.9rem;margin-bottom:6px}
+label{font-size:.82rem;font-weight:500;color:var(--navy);display:grid;gap:6px}
+input,select,textarea{font:inherit;font-size:.95rem;padding:13px 15px;border:1px solid #d5dee6;border-radius:12px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--aqua);border-color:var(--indigo)}
+textarea{min-height:110px;resize:vertical}
+form .btn{justify-content:center;margin-top:6px}
+
+/* ===== Footer ===== */
+footer{background:#081f37;color:#a9bccd;padding:56px 0 30px;font-size:.9rem}
+footer .top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.08)}
+footer img{width:120px;margin-bottom:14px}
+footer h4{color:#fff;font-weight:600;margin-bottom:14px;font-size:.95rem}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:#fff}
+footer .bottom{padding-top:24px;text-align:center;font-size:.8rem}
+
+/* ===== Botones flotantes ===== */
+.float{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.fab{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 12px 26px -8px rgba(0,0,0,.35);transition:transform .2s;position:relative}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:28px;height:28px}
+.fab.wa{background:var(--wa)}
+.fab.wa::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--wa);animation:pulse 2.4s infinite;z-index:-1}
+.fab.tel{background:var(--indigo);width:52px;height:52px}
+.fab.tel svg{width:22px;height:22px}
+.fab .tip{position:absolute;right:72px;background:#fff;color:var(--navy);font-size:.82rem;font-weight:500;padding:8px 14px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 20px -10px rgba(0,0,0,.3);opacity:0;transform:translateX(6px);transition:.2s;pointer-events:none}
+.fab:hover .tip{opacity:1;transform:none}
+@keyframes pulse{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.6);opacity:0}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+/* ===== Responsive ===== */
+@media (max-width:1000px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .empresas .wrap{grid-template-columns:1fr}
+  .empresas .fig{display:none}
+}
+@media (max-width:860px){
+  section{padding:80px 0}
+  .burger{display:block}
+  nav ul{position:fixed;inset:0 0 0 auto;width:min(300px,82vw);background:#fff;flex-direction:column;align-items:flex-start;padding:100px 30px 30px;gap:22px;transform:translateX(100%);transition:transform .3s;box-shadow:-20px 0 40px -20px rgba(0,0,0,.3)}
+  nav.open ul{transform:none}
+  nav a,header.scrolled nav a{color:var(--navy);font-size:1.1rem;text-shadow:none}
+  nav .nav-cta{background:var(--indigo);color:#fff}
+  .burger{position:relative;z-index:2}
+  nav.open + .burger,header.menu .burger{color:var(--navy)}
+  .hero{padding-top:110px;align-items:flex-start}
+  .hero .wrap{grid-template-columns:1fr;text-align:left}
+  .hero-img{order:-1;margin:-10px 0 -20px}
+  .hero-img{width:min(250px,64vw)}
+  .stats .wrap{grid-template-columns:repeat(2,1fr);gap:16px 0;padding-top:18px;padding-bottom:18px}
+  .stat:nth-child(3){border-left:0}
+  .hero{flex-direction:column;align-items:stretch;min-height:auto;padding-bottom:0}
+  .stats{position:relative;margin-top:44px}
+  .intro .wrap,.nos-top,.contacto .wrap{grid-template-columns:1fr;gap:40px}
+  .intro-img{aspect-ratio:auto;max-width:440px;margin:0 auto;width:100%}
+  .intro-img img{height:auto}
+  .valores{grid-template-columns:1fr}
+  footer .top{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .wrap{padding:0 18px}
+  .cards,.sectores{grid-template-columns:1fr}
+  .hero p{font-size:1rem}
+  .btn{padding:13px 22px}
+  form{padding:26px 20px}
+  .float{right:16px;bottom:16px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="top">
+  <div class="wrap">
+    <a href="#inicio" class="logo" aria-label="LALUS Lavandería - Inicio">
+      <img class="l-blanco" src="img/logo-blanco.png" alt="LALUS Lavandería">
+      <img class="l-azul" src="img/logo-azul.png" alt="" aria-hidden="true">
+    </a>
+    <nav id="nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#empresas">Servicio a empresas</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ============ INICIO ============ -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <h1>Vive más,<br><em>lava menos.</em></h1>
+      <p>Cuidado artesanal, velocidad express y recojo a domicilio en Miraflores, San Isidro, Surquillo y alrededores.</p>
+      <div class="ctas">
+        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.69-6.16A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.69-1.45L.06 24zm6.6-3.8c1.68 1 3.28 1.59 5.39 1.59 5.45 0 9.89-4.43 9.89-9.88a9.88 9.88 0 0 0-9.88-9.9c-5.46 0-9.9 4.44-9.9 9.89 0 2.23.66 3.9 1.75 5.65l-1 3.65 3.75-.99zm11.39-5.46c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47a8.95 8.95 0 0 1-1.65-2.06c-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42z"/></svg>
+          Pedir recojo por WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+      </div>
+    </div>
+    <div class="hero-img" id="prendas" aria-hidden="true"></div>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>400K+</b><span>Prendas cuidadas con excelencia</span></div>
+      <div class="stat"><b>2h</b><span>Tiempo récord</span></div>
+      <div class="stat"><b>99.8%</b><span>Índice de satisfacción verificado</span></div>
+      <div class="stat"><b>12+</b><span>Años en Surquillo y Miraflores</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-img rv"><img src="img/canasta.webp" alt="Cliente feliz con su canasta de ropa" loading="lazy"></div>
+    <div class="rv">
+      <span class="eyebrow">LALUS Lavandería Express Laundry</span>
+      <h2>¡Tu ropa impecable, sin perder tu tiempo!</h2>
+      <p class="lead">Ahorra tiempo delegando el lavado de casa en nosotros. Tú vives, nosotros lavamos.</p>
+      <ul class="checks">
+        <li>Lavado por carga separada: tu ropa nunca se mezcla con la de otros.</li>
+        <li>Detergente líquido y suavizante para una frescura total.</li>
+        <li>Recojo y entrega a domicilio u oficina.</li>
+      </ul>
+      <p class="note"><b>Equipo especializado.</b> Personal capacitado y especialistas con amplia experiencia en el cuidado de prendas.</p>
+      <div class="eco">
+        <img src="img/eco.png" alt="Eco friendly" width="121" height="142">
+        <div><b>95% bolsas biodegradables</b><span>Tu ropa del servicio express se entrega en bolsas biodegradables. Limpia para ti, amable con el planeta.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="servicios" id="servicios">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Servicios</span>
+      <h2>Cuidamos cada prenda como si fuera nuestra</h2>
+      <p class="lead">Desde tu ropa del día a día hasta las prendas más delicadas.</p>
+    </div>
+    <div class="cards">
+      <article class="card rv">
+        <div class="ph"><img src="img/express.webp" alt="Lavado express" loading="lazy"></div>
+        <div class="tx"><h3>Lavado express</h3><p>Lavado, secado y doblado por carga individual. Listo en tiempo récord.</p><span class="tag"><img src="img/eco.png" alt="">Bolsas biodegradables</span></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/seco.webp" alt="Lavado al seco" loading="lazy"></div>
+        <div class="tx"><h3>Lavado al seco</h3><p>Ternos, abrigos, chompas y prendas delicadas tratadas con el cuidado que merecen.</p></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/ropa-cama.webp" alt="Lavado de ropa de cama" loading="lazy"></div>
+        <div class="tx"><h3>Ropa de cama</h3><p>Sábanas, edredones, frazadas y cobertores limpios, suaves y desinfectados.</p></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/fiesta.webp" alt="Vestido de fiesta" loading="lazy" style="object-position:center 35%"></div>
+        <div class="tx"><h3>Vestido de fiesta</h3><p>Limpieza especializada para conservar intacto el recuerdo de tu gran día.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMPRESAS ============ -->
+<section class="empresas" id="empresas">
+  <div class="wrap">
+    <div class="fig"><img src="img/scrub.webp" alt="Uniforme clínico" loading="lazy"></div>
+    <div class="rv">
+      <span class="eyebrow">Servicio a empresas</span>
+      <h2>Externaliza la lavandería de tu empresa</h2>
+      <p class="lead">Atendemos clínicas, consultorios médicos, hoteles boutique, propiedades Airbnb, restaurantes y corporativos en Lima.</p>
+      <div class="sectores">
+        <div class="sector"><h3>Clínicas y consultorios</h3><p>Uniformes, mandiles, scrubs, sábanas de camilla y toallas.</p></div>
+        <div class="sector"><h3>Hoteles boutique y Airbnb</h3><p>Sábanas, fundas, edredones y toallas listas para el próximo huésped.</p></div>
+        <div class="sector"><h3>Restaurantes</h3><p>Mantelería, servilletas de tela, mandiles y uniformes de cocina.</p></div>
+        <div class="sector"><h3>Corporativos</h3><p>Uniformes de personal y camisas ejecutivas con recojo en oficina.</p></div>
+      </div>
+      <div class="perks"><span>Facturación electrónica mensual</span><span>Recojo puntual</span><span>Tarifas por volumen</span></div>
+      <a class="btn btn-dark wa-link" data-msg="Hola, quisiera una cotización del servicio de lavandería para empresas." href="#" target="_blank" rel="noopener">Solicitar cotización</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOSOTROS ============ -->
+<section class="nosotros" id="nosotros">
+  <div class="wrap">
+    <div class="nos-top">
+      <div class="rv">
+        <span class="eyebrow">Nuestra historia &amp; compromiso</span>
+        <h2>Reinventando el cuidado de prendas en Lima</h2>
+        <p>En LALUS Lavandería Express Laundry combinamos la cercanía y dedicación del servicio artesanal tradicional con la velocidad y estándares de la lavandería moderna.</p>
+        <p>Estamos en Av. Paseo de la República #5499, Surquillo, en el límite con Miraflores y justo frente a la Estación Ricardo Palma del Metropolitano. Somos el centro de lavado de confianza para miles de vecinos, ejecutivos y empresas.</p>
+        <p class="quote">"Vive más, lava menos". Tu tiempo es invaluable: déjanos el lavado a nosotros y dedícate a lo que te apasiona.</p>
+      </div>
+      <div class="img rv"><img src="img/airbnb.webp" alt="Ropa de cama limpia y doblada" loading="lazy"></div>
+    </div>
+    <div class="valores">
+      <div class="valor rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+        <h3>Compromiso con el medio ambiente</h3>
+        <p>95% bolsas biodegradables en el servicio express, detergentes de bajo residuo y uso eficiente del agua.</p>
+      </div>
+      <div class="valor rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Lavado 100% individual</h3>
+        <p>Jamás mezclamos tus prendas con las de otros clientes. Cada pedido tiene su propio ciclo de lavado y desinfección.</p>
+      </div>
+      <div class="valor rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Local céntrico y delivery ágil</h3>
+        <p>Visítanos en nuestro local o pide recojo en Miraflores, San Isidro, Surquillo, San Borja y Barranco.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEÑAS ============ -->
+<section class="resenas">
+  <div class="wrap">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <a class="gscore" href="https://maps.app.goo.gl/bynUhHKwyFiWZiY87" target="_blank" rel="noopener" aria-label="Calificación en Google">
+      <span class="gnum" id="gnum">4,3</span>
+      <span>
+        <span class="gstars"><span>★★★★★</span><span class="fill" id="gfill" style="width:86%">★★★★★</span></span>
+        <small><b id="gtotal">89</b> reseñas en Google</small>
+      </span>
+    </a>
+    <!-- Reseñas: para agregar otra, copia una línea <figure ...>...</figure> y cambia el texto y el nombre -->
+    <div class="rev-grid" id="resenas">
+      <figure class="rev"><div class="st">★★★★★</div><blockquote dir="auto">Great experience at Lavanderia Lalu's! Fast, efficient, and very careful service. The staff is friendly and professional—you can tell they really take care of your clothes. The machines are clean and the place is well organized. Perfect if you're in Miraflores or in a hurry. Highly recommended</blockquote><figcaption><b dir="auto">Gregory Koenig</b><small>Reseña de Google</small></figcaption></figure>
+      <figure class="rev"><div class="st">★★★★★</div><blockquote dir="auto">Excelente atención, serviciales y muy puntuales. Las prendas quedan perfectas</blockquote><figcaption><b dir="auto">Alejandra Solari Valdivia</b><small>Reseña de Google</small></figcaption></figure>
+      <figure class="rev"><div class="st">★★★★★</div><blockquote dir="auto">They did an excellent job and were super quick! They did a good job getting stains out of my white pants and were super friendly :)</blockquote><figcaption><b dir="auto">Gracey Tombleson</b><small>Reseña de Google</small></figcaption></figure>
+      <figure class="rev"><div class="st">★★★★★</div><blockquote dir="auto">Muy buena la atención, incluso se me hacía tarde para mi viaje y se supieron entender y me esperaron 10/10</blockquote><figcaption><b dir="auto">Maykol PQ</b><small>Reseña de Google</small></figcaption></figure>
+      <figure class="rev"><div class="st">★★★★★</div><blockquote dir="auto">Satisfecha con TODO, buen servicio, amabilidad, puntualidad... ✨ Super recomendable ✨</blockquote><figcaption><b dir="auto">Karol</b><small>Reseña de Google</small></figcaption></figure>
+      <figure class="rev"><div class="st">★★★★★</div><blockquote dir="auto">שירות מעולה</blockquote><figcaption><b dir="auto">שירה סבג</b><small>Reseña de Google</small></figcaption></figure>
+    </div>
+    <div class="dots" id="dots"></div>
+    <a class="btn btn-ghost" href="https://maps.app.goo.gl/bynUhHKwyFiWZiY87" target="_blank" rel="noopener">Ver reseñas en Google</a>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="contacto" id="contacto">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Contacto</span>
+      <h2>Agenda tu recojo hoy</h2>
+      <p class="lead">Escríbenos por WhatsApp, llámanos o visítanos en el local.</p>
+      <div class="info">
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <p><b>Dirección</b><span>Av. Paseo de la República #5499, Surquillo (límite con Miraflores). Frente a la Estación Ricardo Palma.</span> <a href="https://maps.app.goo.gl/bynUhHKwyFiWZiY87" target="_blank" rel="noopener" style="color:var(--indigo);font-weight:500">Cómo llegar →</a></p></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+          <p><b>Horario</b><span>Lunes a sábado de 9:00 a.m. a 6:00 p.m.</span></p></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          <p><b>Teléfono / WhatsApp</b><a href="tel:+51997608648">+51 997 608 648</a></p></div>
+        <div><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="11" rx="1"/><path d="M16 11h4l3 3v4h-7"/><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="18.5" r="2"/></svg></span>
+          <p><b>Recojo express</b><span>Miraflores · San Isidro · Surquillo · San Borja · Barranco</span></p></div>
+      </div>
+      <div class="horario">
+        <img src="img/reloj.webp" alt="Reloj de nuestro local" loading="lazy" width="520" height="520">
+        <div><span id="estado" class="estado">Horario</span><b>Lunes a sábado</b><span>9:00 a.m. – 6:00 p.m.</span></div>
+      </div>
+      <div class="map">
+        <iframe title="Ubicación de LALUS Lavandería" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=-12.1189015,-77.0256079&amp;z=17&amp;output=embed"></iframe>
+      </div>
+    </div>
+
+    <form id="form" class="rv">
+      <h3>Solicita tu recojo</h3>
+      <p>Completa los datos y te enviaremos directo a WhatsApp con tu pedido listo.</p>
+      <label>Nombre<input name="nombre" required placeholder="Tu nombre"></label>
+      <label>Distrito<select name="distrito">
+        <option>Miraflores</option><option>San Isidro</option><option>Surquillo</option><option>San Borja</option><option>Barranco</option><option>Otro</option>
+      </select></label>
+      <label>Servicio<select name="servicio">
+        <option>Lavado express</option><option>Lavado al seco</option><option>Ropa de cama</option><option>Vestido de fiesta</option><option>Servicio a empresas</option>
+      </select></label>
+      <label>Mensaje (opcional)<textarea name="mensaje" placeholder="Dirección, horario de recojo, cantidad de prendas…"></textarea></label>
+      <button class="btn btn-wa" type="submit">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.69-6.16A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.69-1.45L.06 24zm6.6-3.8c1.68 1 3.28 1.59 5.39 1.59 5.45 0 9.89-4.43 9.89-9.88a9.88 9.88 0 0 0-9.88-9.9c-5.46 0-9.9 4.44-9.9 9.89 0 2.23.66 3.9 1.75 5.65l-1 3.65 3.75-.99zm11.39-5.46c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47a8.95 8.95 0 0 1-1.65-2.06c-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42z"/></svg>
+        Enviar por WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <img src="img/logo-blanco.png" alt="LALUS Lavandería" loading="lazy">
+        <p style="color:#a9bccd">Cuidado artesanal, velocidad express y servicio premium en Lima.</p>
+      </div>
+      <div>
+        <h4>Secciones</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li><li><a href="#servicios">Servicios</a></li>
+          <li><a href="#empresas">Servicio a empresas</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Local</h4>
+        <ul>
+          <li>Av. Paseo de la República #5499, Surquillo</li>
+          <li>Lun – Sáb · 9:00 a.m. – 6:00 p.m.</li>
+          <li><a href="tel:+51997608648">+51 997 608 648</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">© <span id="yr">2026</span> LALUS Lavandería Express Laundry. Todos los derechos reservados.</div>
+  </div>
+</footer>
+
+<!-- ============ BOTONES FLOTANTES (siempre visibles) ============ -->
+<div class="float">
+  <a class="fab tel" href="tel:+51997608648" aria-label="Llamar">
+    <span class="tip">Llámanos</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+  </a>
+  <a class="fab wa wa-link" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <span class="tip">¿Agendamos tu recojo?</span>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.69-6.16A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.41 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.69-1.45L.06 24zm6.6-3.8c1.68 1 3.28 1.59 5.39 1.59 5.45 0 9.89-4.43 9.89-9.88a9.88 9.88 0 0 0-9.88-9.9c-5.46 0-9.9 4.44-9.9 9.89 0 2.23.66 3.9 1.75 5.65l-1 3.65 3.75-.99zm11.39-5.46c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47a8.95 8.95 0 0 1-1.65-2.06c-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.48.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42z"/></svg>
+  </a>
+</div>
+
+<script>
+/* =====================================================================
+   CONFIGURACIÓN — solo edita esta parte
+   ===================================================================== */
+const WHATSAPP = "51997608648";
+
+// Prendas que van cambiando en la portada (archivos dentro de img/prendas/).
+// Para agregar una: copia el PNG transparente a img/prendas/ y escribe su nombre aquí.
+// Para una imagen fija abajo con otra flotando encima, usa { base: "...", flota: "..." }.
+const PRENDAS = [
+  "camisaco.webp",
+  "terno.webp",
+  "scrub.webp",
+  "vestido.webp",
+  "bata-bano.webp",
+  { base: "cama.webp", flota: "edredon.webp" },
+];
+
+/* ===================================================================== */
+const MSG_DEFAULT = "Hola LALUS, quisiera solicitar un recojo de ropa.";
+
+const wa = (msg) => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg || MSG_DEFAULT)}`;
+document.querySelectorAll('.wa-link').forEach(a => a.href = wa(a.dataset.msg));
+
+// Formulario -> WhatsApp (no necesita servidor, funciona en GitHub Pages)
+document.getElementById('form').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = new FormData(e.target);
+  const msg = `Hola LALUS, soy ${f.get('nombre')}.\nServicio: ${f.get('servicio')}\nDistrito: ${f.get('distrito')}` +
+              (f.get('mensaje') ? `\n${f.get('mensaje')}` : '');
+  window.open(wa(msg), '_blank');
+});
+
+// Header al hacer scroll
+const header = document.getElementById('top');
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 40);
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+// Menú móvil
+const nav = document.getElementById('nav'), burger = document.getElementById('burger');
+burger.addEventListener('click', () => { nav.classList.toggle('open'); header.classList.toggle('menu'); });
+nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); header.classList.remove('menu'); }));
+
+// Enlace activo + animaciones de entrada
+const links = [...nav.querySelectorAll('a')];
+const io = new IntersectionObserver(es => es.forEach(en => {
+  if (en.isIntersecting) links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + en.target.id));
+}), {rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(s => io.observe(s));
+const rv = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); rv.unobserve(en.target); } }), {threshold:.12});
+document.querySelectorAll('.rv').forEach(el => rv.observe(el));
+
+// Prendas rotando en la portada
+const box = document.getElementById('prendas');
+const img = (f, cls) => { const im = new Image(); im.src = 'img/prendas/' + f; im.alt = ''; im.className = cls; return im; };
+const imgs = PRENDAS.map((p, i) => {
+  const d = document.createElement('div'); d.className = 'slide' + (i ? '' : ' on');
+  if (typeof p === 'string') d.appendChild(img(p, 'fl'));
+  else { d.classList.add('combo'); d.appendChild(img(p.base, 'base')); d.appendChild(img(p.flota, 'fl')); }
+  box.appendChild(d); return d;
+});
+let cur = 0;
+if (imgs.length > 1) setInterval(() => { imgs[cur].classList.remove('on'); cur = (cur + 1) % imgs.length; imgs[cur].classList.add('on'); }, 4500);
+
+// Reseñas: grupos de 3 (1 en celular) que cambian solos
+(() => {
+  const grid = document.getElementById('resenas'), dots = document.getElementById('dots');
+  const cards = [...grid.children];
+  let page = 0, timer;
+  const per = () => matchMedia('(max-width:860px)').matches ? 1 : 3;
+  const pages = () => Math.ceil(cards.length / per());
+  const show = (n, anim) => {
+    const go = () => {
+      page = (n + pages()) % pages();
+      cards.forEach((c, i) => c.hidden = Math.floor(i / per()) !== page);
+      [...dots.children].forEach((d, i) => d.classList.toggle('on', i === page));
+      grid.classList.remove('fade');
+    };
+    if (anim) { grid.classList.add('fade'); setTimeout(go, 450); } else go();
+  };
+  const build = () => {
+    dots.innerHTML = '';
+    for (let i = 0; i < pages(); i++) {
+      const b = document.createElement('button'); b.setAttribute('aria-label', 'Reseñas ' + (i + 1));
+      b.onclick = () => { show(i, true); restart(); }; dots.appendChild(b);
+    }
+    dots.style.display = pages() > 1 ? '' : 'none';
+    show(Math.min(page, pages() - 1), false);
+  };
+  const restart = () => { clearInterval(timer); timer = setInterval(() => show(page + 1, true), 6000); };
+  build(); restart();
+  matchMedia('(max-width:860px)').addEventListener('change', build);
+})();
+
+// Calificación de Google: lee rating.json (si existe) para mantenerla al día
+fetch('rating.json', {cache: 'no-store'}).then(r => r.ok ? r.json() : null).then(d => {
+  if (!d || !d.rating) return;
+  document.getElementById('gnum').textContent = Number(d.rating).toFixed(1).replace('.', ',');
+  document.getElementById('gfill').style.width = (d.rating / 5 * 100) + '%';
+  if (d.total) document.getElementById('gtotal').textContent = d.total;
+}).catch(() => {});
+
+// Abierto / cerrado (hora de Lima)
+const lima = new Date(new Date().toLocaleString('en-US', {timeZone: 'America/Lima'}));
+const abierto = lima.getDay() >= 1 && lima.getDay() <= 6 && lima.getHours() >= 9 && lima.getHours() < 18;
+const est = document.getElementById('estado');
+est.textContent = abierto ? '● Abierto ahora' : '● Cerrado ahora';
+est.classList.add(abierto ? 'abierto' : 'cerrado');
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
