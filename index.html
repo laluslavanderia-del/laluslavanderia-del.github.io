@@ -31,6 +31,7 @@ section{padding:110px 0}
 h1,h2,h3{line-height:1.15;font-weight:600;color:var(--navy)}
 h2{font-size:clamp(1.9rem,3.6vw,2.8rem);margin-bottom:18px;letter-spacing:-.01em}
 h3{font-size:1.2rem;margin-bottom:8px}
+h2.h2-sm{font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.25}
 p{color:var(--muted)}
 .lead{font-size:1.08rem;max-width:620px}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:500;font-size:.95rem;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;font-family:inherit}
@@ -104,7 +105,7 @@ header.scrolled .burger{color:var(--navy)}
 
 /* ===== Servicios ===== */
 .servicios{background:var(--mist)}
-.head{max-width:640px;margin-bottom:56px}
+.head{max-width:760px;margin-bottom:44px}
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
 .card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(11,42,74,.35)}
@@ -131,10 +132,11 @@ header.scrolled .burger{color:var(--navy)}
 .perks span{background:var(--navy);color:#fff;font-size:.82rem;padding:7px 14px;border-radius:999px}
 
 /* ===== Nosotros ===== */
-.nos-top{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;margin-bottom:80px}
+.nos-top{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
 .nos-top .img{border-radius:var(--radius);overflow:hidden;background:url(img/fondo-1.webp) center/cover}
 .nos-top .img img{width:100%}
 .nos-top p+p{margin-top:16px}
+.nosotros{padding:80px 0}
 .quote{margin-top:26px;font-size:1.35rem;color:var(--indigo);font-weight:500;line-height:1.4}
 .valores{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .valor{padding:32px 28px;border-radius:var(--radius);background:var(--mist);border:1px solid var(--line)}
@@ -316,14 +318,13 @@ footer .bottom{padding-top:24px;text-align:center;font-size:.8rem}
     <div class="intro-img rv"><img src="img/canasta.webp" alt="Cliente feliz con su canasta de ropa" loading="lazy"></div>
     <div class="rv">
       <span class="eyebrow">LALUS Lavandería Express Laundry</span>
-      <h2>¡Tu ropa impecable, sin perder tu tiempo!</h2>
-      <p class="lead">Ahorra tiempo delegando el lavado de casa en nosotros. Tú vives, nosotros lavamos.</p>
+      <h2 class="h2-sm">Lavamos rápido tu ropa. La entregamos el mismo día, limpia, seca y doblada.</h2>
+      <p class="lead">Delega el lavado con nosotros.</p>
       <ul class="checks">
         <li>Lavado por carga separada: tu ropa nunca se mezcla con la de otros.</li>
         <li>Detergente líquido y suavizante para una frescura total.</li>
         <li>Recojo y entrega a domicilio u oficina.</li>
       </ul>
-      <p class="note"><b>Equipo especializado.</b> Personal capacitado y especialistas con amplia experiencia en el cuidado de prendas.</p>
       <div class="eco">
         <img src="img/eco.png" alt="Eco friendly" width="121" height="142">
         <div><b>95% bolsas biodegradables</b><span>Tu ropa del servicio express se entrega en bolsas biodegradables. Limpia para ti, amable con el planeta.</span></div>
@@ -337,8 +338,7 @@ footer .bottom{padding-top:24px;text-align:center;font-size:.8rem}
   <div class="wrap">
     <div class="head rv">
       <span class="eyebrow">Servicios</span>
-      <h2>Cuidamos cada prenda como si fuera nuestra</h2>
-      <p class="lead">Desde tu ropa del día a día hasta las prendas más delicadas.</p>
+      <h2>Servicio especial para cada necesidad</h2>
     </div>
     <div class="cards">
       <article class="card rv">
@@ -367,8 +367,7 @@ footer .bottom{padding-top:24px;text-align:center;font-size:.8rem}
     <div class="fig"><img src="img/scrub.webp" alt="Uniforme clínico" loading="lazy"></div>
     <div class="rv">
       <span class="eyebrow">Servicio a empresas</span>
-      <h2>Externaliza la lavandería de tu empresa</h2>
-      <p class="lead">Atendemos clínicas, consultorios médicos, hoteles boutique, propiedades Airbnb, restaurantes y corporativos en Lima.</p>
+      <h2>¡Damos servicio a empresas!</h2>
       <div class="sectores">
         <div class="sector"><h3>Clínicas y consultorios</h3><p>Uniformes, mandiles, scrubs, sábanas de camilla y toallas.</p></div>
         <div class="sector"><h3>Hoteles boutique y Airbnb</h3><p>Sábanas, fundas, edredones y toallas listas para el próximo huésped.</p></div>
@@ -387,29 +386,11 @@ footer .bottom{padding-top:24px;text-align:center;font-size:.8rem}
     <div class="nos-top">
       <div class="rv">
         <span class="eyebrow">Nuestra historia &amp; compromiso</span>
-        <h2>Reinventando el cuidado de prendas en Lima</h2>
-        <p>En LALUS Lavandería Express Laundry combinamos la cercanía y dedicación del servicio artesanal tradicional con la velocidad y estándares de la lavandería moderna.</p>
+        <h2>Más de 12 años construyendo confianza</h2>
+        <p>En LALUS Lavandería Express Laundry, contamos con más de 12 años de experiencia brindando soluciones de lavandería para clientes particulares y empresas locales. Combinamos la cercanía y dedicación del servicio tradicional con la eficiencia, rapidez y estándares de calidad de una lavandería moderna.</p>
         <p>Estamos en Av. Paseo de la República #5499, Surquillo, en el límite con Miraflores y justo frente a la Estación Ricardo Palma del Metropolitano. Somos el centro de lavado de confianza para miles de vecinos, ejecutivos y empresas.</p>
-        <p class="quote">"Vive más, lava menos". Tu tiempo es invaluable: déjanos el lavado a nosotros y dedícate a lo que te apasiona.</p>
       </div>
       <div class="img rv"><img src="img/airbnb.webp" alt="Ropa de cama limpia y doblada" loading="lazy"></div>
-    </div>
-    <div class="valores">
-      <div class="valor rv">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
-        <h3>Compromiso con el medio ambiente</h3>
-        <p>95% bolsas biodegradables en el servicio express, detergentes de bajo residuo y uso eficiente del agua.</p>
-      </div>
-      <div class="valor rv">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3>Lavado 100% individual</h3>
-        <p>Jamás mezclamos tus prendas con las de otros clientes. Cada pedido tiene su propio ciclo de lavado y desinfección.</p>
-      </div>
-      <div class="valor rv">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <h3>Local céntrico y delivery ágil</h3>
-        <p>Visítanos en nuestro local o pide recojo en Miraflores, San Isidro, Surquillo, San Borja y Barranco.</p>
-      </div>
     </div>
   </div>
 </section>
